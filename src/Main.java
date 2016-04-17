@@ -2,10 +2,11 @@ public class Main {
     public static void main(String[] args){
 
         Fighter jack = new Fighter("Jack", 80, 70, 12);
+        jack.receiveDamage();
 
 
         System.out.println("This fighter's name is " + jack.name + ". Strength: "+ jack.strength + ". Defense: " + jack.defense +
-                ". Intelligence: " + jack.intelligence + ". A brawny fellow.");
+                ". Intelligence: " + jack.intelligence + ". A brawny fellow." + " Damage received: " + jack.getReceiveDamage());
 
 
         Fighter jason = new Fighter("Jason", 90, 50, 20);
