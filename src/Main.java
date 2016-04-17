@@ -2,67 +2,50 @@ public class Main {
     public static void main(String[] args){
 
         Fighter jack = new Fighter("Jack", 80, 70, 12);
-        jack.receiveDamage();
 
-
-        System.out.println("This fighter's name is " + jack.name + ". Strength: "+ jack.strength + ". Defense: " + jack.defense +
-                ". Intelligence: " + jack.intelligence + ". A brawny fellow." + " Damage received: " + jack.getReceiveDamage());
+        System.out.println("This fighter's name is " + jack.getName() + ". Strength: " + jack.getStrength() + ". Defense: " +jack.getDefense() +
+                ". Intelligence: " + jack.getIntelligence() + ". A brawny fellow.");
 
 
         Fighter jason = new Fighter("Jason", 90, 50, 20);
 
+        jason.setIntelligence(25);
+
+        System.out.println("This fighter's name is " + jason.getName() + ". Strength: " +jason.getStrength() + ". Defense: " +jason.getDefense() +
+                ". Intelligence: " + jason.getIntelligence() + ". A brainy fellow.");
 
 
 
-        Monk adrian = new Monk();
-
-        adrian.name = "Adrian";
-        adrian.strength = 10;
-        adrian.defense = 30;
-        adrian.intelligence = 80;
+        Monk adrian = new Monk("Adrian", 10, 30, 80);
 
 
-        System.out.println("This monk's name is " + adrian.name + ". Strength: "+ adrian.strength + ". Defense: " + adrian.defense +
-                ". Intelligence: " + adrian.intelligence + ". Knows what he's doing.");
+        System.out.println("This monk's name is " + adrian.getName() + ". Strength: " +adrian.getStrength() + ". Defense: " + adrian.getDefense() +
+                ". Intelligence: " + adrian.getIntelligence() +  ". Knows what he's doing.");
 
 
-        Monk caine = new Monk();
+        Monk caine = new Monk("Caine", 20, 60, 60);
 
-        caine.name = "Caine";
-        caine.strength = 20;
-        caine.defense = 60;
-        caine.intelligence = 60;
+        caine.setStrength(40);
+
+        System.out.println("This monk's name is " + caine.getName() + ". Strength: " + caine.getStrength() + ". Defense: "  + caine.getDefense() +
+                ". Intelligence: " + caine.getIntelligence() + ". Doesn't talk much.");
+
+
+        Thief chris = new Thief("Chris", 50, 20, 70);
 
 
 
-        Thief chris = new Thief();
-
-        chris.name = "Chris";
-        chris.strength = 50;
-        chris.defense = 20;
-        chris.intelligence = 70;
+        System.out.println("This thief's name is " + chris.getName() + ". Strength: "+ chris.getStrength() + ". Defense: " + chris.getDefense() +
+                ". Intelligence: " + chris.getIntelligence() + ". Sneaky.");
 
 
+        Thief danny = new Thief("Danny", 30, 30, 80);
 
-        System.out.println("This thief's name is " + chris.name + ". Strength: "+ chris.strength + ". Defense: " + chris.defense +
-                ". Intelligence: " + chris.intelligence + ". Sneaky.");
-
-
-        Thief danny = new Thief();
-
-        danny.name = "Danny";
-        danny.strength = 30;
-        danny.defense = 30;
-        danny.intelligence = 80;
+        System.out.println("This thief's name is " + danny.getName() + ". Strength: "+ danny.getStrength() + ". Defense: " + danny.getDefense() +
+                ". Intelligence: " + danny.getIntelligence() + ". Likes backstabbing.");
 
 
-
-        Wizard meg = new Wizard();
-
-        meg.name = "Meg";
-        meg.strength = 10;
-        meg.defense = 10;
-        meg.intelligence = 140;
+        Wizard meg = new Wizard("Meg", 10, 10, 140);
 
 
         System.out.println("This wizard's name is " + meg.name + ". Strength: "+ meg.strength + ". Defense: " + meg.defense +
@@ -105,24 +88,9 @@ public class Main {
 
 
 
-        jason.strength = 120;
-        jason.defense = 70;
-        jason.intelligence = 25;
-
-        System.out.println("This fighter's name is " + jason.name + ". Strength: "+ jason.strength + ". Defense: " + jason.defense +
-                ". Intelligence: " + jason.intelligence + ". Really excels in power.");
 
 
 
-        caine.name = "Caine";
-        caine.strength = 30;
-        caine.defense = 80;
-        caine.intelligence = 70;
-
-
-
-        System.out.println("This monk's name is " + caine.name + ". Strength: "+ caine.strength + ". Defense: " + caine.defense +
-                ". Intelligence: " + caine.intelligence + ". Can take several hits.");
 
 
         danny.name = "Danny";
