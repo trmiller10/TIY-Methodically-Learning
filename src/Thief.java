@@ -33,9 +33,9 @@ public class Thief {
     }
 
     //set if parameter to
-    public void setStrength(int strength) {
+    public void setDefense(int defense) {
         if (defense >= 30) {
-            this.strength = strength;
+            this.defense = defense;
         } else {
             System.out.println("If a thief could take a hit they wouldn't have to sneak.");
         }

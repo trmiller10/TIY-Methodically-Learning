@@ -40,7 +40,7 @@ public class Cat{
         } else {
             System.out.println("These are housecats, not lions.  Don't tell them that, though.");
         }
-    }.
+    }
 
 
 }

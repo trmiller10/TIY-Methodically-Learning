@@ -34,7 +34,7 @@ public class Wizard {
 
     //set if parameter to
     public void setIntelligence(int intelligence) {
-        if (intelligence >= 30) {
+        if (intelligence >= 100) {
             this.intelligence = intelligence;
         } else {
             System.out.println("Dumb wizards usually end up dead wizards.");
